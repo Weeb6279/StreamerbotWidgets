@@ -37,7 +37,7 @@ export function useBotConnection<T>(
     if (val.data == null) return
 
     if (val.data.channel === channel) {
-      callback(val.data.content as T).then(() => {})
+      callback(val.data.payload as T).then(() => {})
     }
   })
 
