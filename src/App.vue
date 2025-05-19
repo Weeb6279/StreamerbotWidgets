@@ -43,6 +43,9 @@ watch(data, ({ data, event }) => {
   if (event == null) return;
   if (event.source === 'Twitch' && event.type === 'ChatMessage') {
     const message = data as TwitchChatMessageData
+    if (message.text.startsWith('!')) {
+      return;
+    }
     messages.value.push(message)
   }
 })

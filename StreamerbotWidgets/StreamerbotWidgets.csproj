@@ -16,6 +16,9 @@
       <Reference Include="Newtonsoft.Json">
         <HintPath>..\..\..\Streamer.bot-x64-0.2.8\Newtonsoft.Json.dll</HintPath>
       </Reference>
+      <Reference Include="Streamer.bot.Common">
+        <HintPath>..\..\..\Streamer.bot-x64-0.2.8\Streamer.bot.Common.dll</HintPath>
+      </Reference>
       <Reference Include="Streamer.bot.Plugin.Interface">
         <HintPath>..\..\..\Streamer.bot-x64-0.2.8\Streamer.bot.Plugin.Interface.dll</HintPath>
       </Reference>

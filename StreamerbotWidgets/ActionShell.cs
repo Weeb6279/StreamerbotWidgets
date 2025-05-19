@@ -9,7 +9,8 @@ public class CPHInline
     public bool SendTestNotification()
     {
         CPH.TryGetArg("rawInput", out string rawInput);
-        var notification = new Notification("Weeb6279", rawInput);
+        CPH.TryGetArg("userName", out string userName);
+        var notification = new Notification(userName, rawInput);
         StreamNotification.SendStreamrebotWidgetNotification(CPH, notification);
         return true;
     }
