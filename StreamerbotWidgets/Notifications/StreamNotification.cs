@@ -18,7 +18,7 @@ public static class StreamNotification
     };
 
     
-    public static void SendStreamrebotWidgetNotification(this IInlineInvokeProxy CPH, Notification notification)
+    public static void StreamerbotWidgetsSendNotification(this IInlineInvokeProxy CPH, Notification notification)
     {
         var json = JsonConvert.SerializeObject(WebSocketMessage.Create("Chat", notification), _settings);
         CPH.WebsocketBroadcastJson(json);

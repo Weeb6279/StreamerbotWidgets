@@ -11,7 +11,7 @@ public class CPHInline
         CPH.TryGetArg("rawInput", out string rawInput);
         CPH.TryGetArg("userName", out string userName);
         var notification = new Notification(userName, rawInput);
-        StreamNotification.SendStreamrebotWidgetNotification(CPH, notification);
+        CPH.StreamerbotWidgetsSendNotification(notification);
         return true;
     }
 }
